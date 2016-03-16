@@ -1,0 +1,42 @@
+{
+  "success": "true",
+  "data": {
+    "title": "Inflatable Jabba the Hutt",
+    "summery": "Nothing spreads holidays cheer like a giant inflatable Jabba the Hutt in your yard. Heck this Jabba will look great intimating all of your neighbours year around.",
+    "description": "<p>The very first time you saw an inflatable in somebody's yard, you immediately thought of this, too, didn't you? Jabba's such a perfect fit for a lawn decoration like this. And it's not like you have to keep him on your lawn. eighter, Stick him in your den. Put him in your garage. Just don't put him in your bedroom. That's creepy.</p><p>This Star Wars Jabba the Hutt Inflatable... inflates in just minutes. It has a built-in blower fan for wasy inflatation and includes stakes so nobody takes off your prize. Pair him with a Han Solo in carbonite doot cover, and you're halfway to his palace. just walk carefully. No telling where there's a trap door.</p>",
+    "price": {
+      "value": "95",
+      "currency": "$"
+    },
+    "specifications": [
+      "6tf tall x 10ft long Jabba inflatable",
+      "Intimating on your lawn",
+      "Perfect for your Slave Leia group photo shoot"
+    ],
+    "colors": [
+      {
+        "id": "1",
+        "code": "#746165"
+      },
+      {
+        "id": "2",
+        "code": "#eaa77d"
+      },
+      {
+        "id": "3",
+        "code": "#656946"
+      },
+      {
+        "id": "4",
+        "code": "#423431"
+      }
+    ],
+    "details": {
+      "weight": "20Kg",
+      "material": "Soft plastic",
+      "airPomp": "included",
+      "size": "Free size",
+      "maker": "Jabba Maker Inc"
+    }
+  }
+}

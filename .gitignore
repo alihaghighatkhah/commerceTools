@@ -1,0 +1,6 @@
+.idea
+app/libs
+app/css
+node_modules
+javascripts
+dist
