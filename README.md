@@ -1,4 +1,16 @@
-#Contineous integration
+#Start
+ Use these command to start project<br>
+    `bower install`<br>
+    `npm install`<br>
+    `grunt serve`<br>
+    
+ Then navigate to <br>
+   `http://127.0.0.1:9001/#/products/123`
+  <br>
+  This means you're navigating to the product with `id` equal to 123 in list of products
+ 
+ 
+#Task Runner
  - Grunt: I've used Grunt for repeating tasks of integration and I have following task in my Grunt file:<br>
    - sass : This is a sass compiler written in C++ and is much more faster than regular Compass written in ruby. The performance of this compiler is remarkable while using frameworks in Bootstraps which contain many sass files
    - autoprefixer : instead of creating mixins for CSS3 properties and other vendor prefix needing porperties, this task adds the verndor prefeixes to CSS file directly.
