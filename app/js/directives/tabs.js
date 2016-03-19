@@ -1,7 +1,7 @@
 /**
  *
  * @name tabs
- * @param $rootScope {object}
+ * @param $rootScope {object} - the scope object which wont die in application life cycle
  *
  */
 app.directive('tabs', ['$rootScope', function ($rootScope) {
@@ -16,6 +16,8 @@ app.directive('tabs', ['$rootScope', function ($rootScope) {
         }
 
         $rootScope.flags.tabs[$attrs.tabs] = $attrs.index;
+
+        // I need to apply changes manually because no angular function with apply functionality has been used here
         $rootScope.$apply();
       });
 

@@ -1,12 +1,33 @@
+/**
+ *
+ * Note:
+ * Best practice for importing partial files in a directory is to use
+ * sass-globbing under gem
+ * and the import files by directory
+ * I didn't do that not to force you to install gem plugins
+ *
+ **/
 
-@import "reset";
-@import "variables";
-@import "mixins";
-@import "animations";
-@import "icons";
-@import "grids";
-@import "type";
-@import "base";
-@import "layout";
-@import "modules";
-@import "states";
+/** Importing base files  **/
+
+@import "base/reset";
+@import "base/variables/colors";
+@import "base/variables/sizes";
+@import "base/variables/indexes";
+@import "base/animations";
+@import "base/mixins";
+@import "base/type";
+@import "base/variables";
+@import "base/misc";
+
+
+@import "layouts/grids";
+@import "layouts/misc";
+
+
+@import "modules/icons";
+@import "modules/elements";
+@import "modules/misc";
+
+
+@import "states/misc";

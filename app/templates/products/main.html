@@ -19,19 +19,21 @@
 
                     <fieldset ng-repeat="color in product.colors">
                         <input type="radio" name="colors" id="color-{{color.id}}">
-                        <label for="color-{{color.id}}" style="background-color: {{color.code}};"></label>
+                        <label for="color-{{color.id}}">
+                            <span style="background-color: {{color.code}};"></span>
+                        </label>
                     </fieldset>
                 </fieldset>
 
-                <button class="primary full margin-top-small">BUY THIS PRODUCT</button>
+                <button class="primary full margin-top-small icon-cart">BUY THIS PRODUCT</button>
             </form>
 
         </section>
 
     <aside class="m-pricing column-lg-4 column-md-7 column-sm-16 right-aligned padding-bottom-tiny">
         <header class="padding-top-tiny padding-right-small padding-bottom-tiny">
-            <h3>{{product.price.currency}} {{purchase.quantity * product.price.value}}</h3>
-            <h4><i>or {{purchase.quantity}}x <b>{{product.price.currency}} {{product.price.value}}</b></i></h4>
+            <h3>{{product.price.currency}} {{purchase.quantity * product.price.value | cents}}</h3>
+            <h4><i>or {{purchase.quantity}}x <b>{{product.price.currency}} {{product.price.value | cents}}</b></i></h4>
         </header>
 
         <ul class="padding-top-small left-aligned padding-right-tiny padding-left-small">

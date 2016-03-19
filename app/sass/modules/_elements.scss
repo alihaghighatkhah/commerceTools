@@ -1,0 +1,147 @@
+/**
+ *
+ * From elements
+ *
+**/
+
+form, .form
+{
+
+
+  // all item must stay vertically aligned to each other
+  label, input, button, select, fieldset
+  {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  label
+  {
+    font-size: 0.9em;
+    color: $base-color-4-1;
+    padding-right: 4px;
+  }
+  input[type='text'],
+  input[type='number'],
+  input[type='assword'],
+  input[type='email']
+  {
+    line-height: 30px;
+    border: solid 1px $base-color-4-3;
+    font-size: 1.2em;
+    text-align: center;
+  }
+}
+
+
+/**
+ *
+ * Table and sub-elements
+ *
+**/
+table
+{
+  tr
+  {
+    line-height: 30px;
+    color: $base-color-4-1;
+    font-size: 0.9em;
+
+    &:nth-child(2n)
+    {
+      background: rgba(255,255,255,0.5);
+    }
+
+    &:hover
+    {
+      background: $base-color-4-4;
+      td
+      {
+        color: darken($base-color-4-1, 100%);
+      }
+    }
+  }
+}
+
+
+
+/**
+ *
+ * Buttons and button shaped links
+ *
+**/
+.button, button
+{
+  position: relative;
+  line-height: 36px;
+  color: $base-color-4-4;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  font-weight: 600;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  transition: all ease 200ms;
+  box-sizing: border-box;
+  overflow: hidden;
+  z-index: 1;
+
+
+
+  // the bottom border which fills the button when hovered
+  &:after
+  {
+    content: '';
+    display: block;
+    position: absolute;
+    @include square(100%);
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 100%;
+    left: 0;
+    transform: translateY(-3px);
+    transition: all cubic-bezier(.8,.3,.2,.7) 300ms;
+
+  }
+
+
+  // the icon of the button which commes in when hovered (if exist on the button)
+  &:before
+  {
+    display: inline-block;
+    transform: translateX(-200px);
+    transition: all cubic-bezier(.8,.3,.2,.7) 300ms;
+  }
+
+  // for use as submit, purchase and any other position committing buttons
+  &.primary
+  {
+    background-color: $base-color-1-3;
+  }
+
+  // for use as warn, extreme notify like remove actions
+  &.secondary
+  {
+    background-color: $base-color-2-3;
+  }
+
+  // for use as escape, skip and cancel buttons
+  &.neutral
+  {
+    background-color: $base-color-4-3;
+  }
+
+  &:hover
+  {
+    &:before
+    {
+      transform: translateX(-20px);
+    }
+    &:after
+    {
+      transform: translateY(-100%);
+    }
+  }
+
+
+}
